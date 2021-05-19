@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap");
+@import url("variables.scss");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: color #e9ecf4;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+}
+/*# sourceMappingURL=default.css.map */

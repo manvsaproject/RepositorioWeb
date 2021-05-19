@@ -1,0 +1,122 @@
+@import '_variables.scss';
+
+/*ESTRUCTURA Y GRIDS*/
+
+.Contenedor{
+    
+    min-width: 480px;
+    width:auto;
+    max-width: 1000px;
+    margin:20px auto;
+    display: grid;
+    /* grid-gap: 20px; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "Header Header Header"
+                        "Contenido Contenido Contenido"
+                        "Contenido Contenido Contenido"
+                        "Footer Footer Footer";
+}
+
+.Contenedor > div,
+.Contenedor .Header,
+.Contenedor .Contenido,
+.Contenedor .Sidebar,
+.Contenedor .Footer
+{
+    background: #fff;
+    padding:20px;
+    border-radius:0px;
+}
+
+.Contenedor .Header{
+    background: black;
+    color: #fff;
+    grid-area: Header;
+    width: auto;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+}
+
+.Contenedor .Contenido{
+    /* grid-column: span 2; */
+    grid-area: Contenido;
+    background-color:black;
+}
+
+
+
+// .Contenedor .Sidebar {
+//     grid-column : 3/4;
+//     background: black;
+//     display: flex;
+//     align-items: center;
+//     justify-content:center;
+//     /*Css grid se encarga de la estructura de la pagina 
+//     flexbox se encarga de centrar vertical y horizontalmente el sidebar*/
+//     /* grid-row: 2/ 4; */
+//     min-height:100px;
+//     grid-area: Sidebar;
+// }
+
+
+
+.Contenedor .Footer{
+    background: black;
+    color: #fff;
+    grid-area:Footer;
+    margin:auto;
+    text-align: center;
+    font-family: 'Indie Flower';
+    
+
+
+
+@media all and (max-width:768px){
+
+    .Contenedor{
+        grid-template-areas: "Header Header Header"
+        "Contenido Contenido Contenido"
+        "Contenido Contenido Contenido"
+        
+        /* "Widget-1 Widget-1 Widget-2" */
+        "Footer Footer Footer";
+        width: autohtml;
+}
+
+
+
+} 
+
+
+
+/*HEADER Y CAJA CARROUSELL*/
+header{
+    h3{
+        text-align: center;
+        color:12203e;
+        font-family: '';
+        font-size: 35px;
+        text-shadow: 3px 3px $DoradoClaro;
+        letter-spacing: 5px;
+    
+    }
+}
+
+.carrousell{
+
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+
+    .carrousell__text{
+        font-family: 'Indie Flower';
+        color: $DoradoFuerte;
+    }
+}
+
+.card{
+    display:inline-block;
+}
+}
