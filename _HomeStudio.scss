@@ -1,7 +1,4 @@
 @import '_variables.scss';
-@import '_Discografia.scss';
-@import '_HomeStudio.scss';
-
 
 .Contenedor{
     
@@ -111,11 +108,11 @@
 } 
 /**********************************HEADER + MENU NAVEGACION**********************************/
 
-header{
-    h2{
+.Header{
+    h1{
         text-align: center;
         color:12203e;
-        font-family: '';
+        font-family: 'Indie Flower';
         font-size: 150px;
         text-shadow: 3px 3px $DoradoClaro;
         letter-spacing: 5px;
@@ -125,85 +122,15 @@ header{
 }
 
 
-.nav-item{
-    a{
-        font-size:35px;
-        font-family:'Indie Flower';
-        color:$DoradoFuerte;
-    }
-
-}
-
-.nav-link{
-    
-    font-size:30px;
-
-}
 
 /**********************************CAJA VIDEO + TEXTO**********************************/
-.videoHome{
 
-#videoHome__Video{
-    margin-left:225px;
-}
-    #videoHome__Texto{
-        display:flex;
-        flex-direction:column;
-        text-align:center;
-    
-    
-        p{
-            font-family: 'Indie Flower';
-            color: #fAA43D;
-            
-            
-        }
-    }
-}
 
 /**********************************CAJAS DISCOS + TEXTOS**********************************/
 
 
 
 
-
-    #divSkyDive{
-
-
-        display:flex;
-        flex-direction: row;
-        margin-top:100px;
-        
-        #divSkyDive__text{
-            margin-top:50px;
-            justify-content: flex-end;
-            color:whitesmoke;
-            font-family: 'Architects Daughter';
-    
-        }
-        
-    }
-    
-    #divComfort{
-        
-        display:flex;
-        flex-direction: row-reverse;
-        margin-bottom:50px;
-        font-family: 'Architects Daughter';
-        
-
-        #divComfort__text{
-    
-            display:flex;
-            margin-top: 50px;
-            color:whitesmoke;
-            font-family:'Architects Daughter' ;
-            justify-content: flex-start;
-        
-        }
-        
-    }
-    
 
 
 /**********************************CAJAS FOOTER**********************************/
@@ -225,39 +152,18 @@ Footer{
 
 
 
-#RedesSociales{
 
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    box-sizing:border-box;
-    margin:auto;
+
+
+
+
+
+#Proyectos2021{
+
     text-align: center;
-    margin-top:30px;
+    color:12203e;
+    font-family: 'Indie Flower';
+    font-size: 150px;
+    text-shadow: 3px 3px $DoradoClaro;
+    letter-spacing: 5px;
 }
-
-#RedesSociales__imgYoutube{
-    display: flex;
-    width:50px;
-    height:50px;
-
-}
-#RedesSociales__imgInstagram{
-
-    @extend #RedesSociales__imgInstagram;
-    // display: flex;
-    // width:50px;
-    // height:50px;
-    background-color: white;
-}
-#RedesSociales__imgSpotify{
-
-    @extend #RedesSociales__imgInstagram
-}
-
-#C{
-    margin-top:30px;
-
-}
-
-
