@@ -3,10 +3,6 @@
 @import '_HomeStudio.scss';
 
 
-.navbar-nav .nav-link {
-    
-    margin: 20px;
-}
 
 .Contenedor{
     
@@ -15,7 +11,6 @@
     max-width: 1000px;
     margin:20px auto;
     display: grid;
-    /* grid-gap: 20px; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
 
@@ -33,21 +28,22 @@
     background: #fff;
     padding:20px;
     border-radius:0px;
+   
 }
 
 .Contenedor .Header{
     background: black;
     color: #fff;
     grid-area: Header;
-    width: auto;
-    /* grid-column-start: 1;
-    grid-column-end: 4; */
+   
+
 }
 
 .Contenedor .Contenido{
-    /* grid-column: span 2; */
+   
     grid-area: Contenido;
     background-color:black;
+  
 }
 
 .Contenedor .Sidebar {
@@ -56,11 +52,10 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    /*Css grid se encarga de la estructura de la pagina 
-    flexbox se encarga de centrar vertical y horizontalmente el sidebar*/
-    /* grid-row: 2/ 4; */
+
     min-height:100px;
     grid-area: Sidebar;
+ 
 }
 
 .Contenedor .Widget-1,
@@ -74,6 +69,7 @@
     align-items:center;
     justify-content:center;
 
+
 }
 
 .Contenedor .Widget-1{
@@ -82,6 +78,7 @@
 
 .Contenedor .Widget {
     grid-area: Widget-2;
+
 }
 
 .Contenedor .Footer{
@@ -94,26 +91,23 @@
     
 
 
-    /* grid-column: span 3; */
-    /*el SPAN indica cuantas columnas queremos que ocupe el elemento.
-    Cuando escribimos "2/4" le estamos indicando que ocupe desde la columna o linea 2 a la 4*/
 }
 
-@media all and (max-width:768px){
+@media screen and (min-width:425px) and (max-width:1024px) {
 
     .Contenedor{
-        grid-template-areas: "Header Header Header"
-        "Contenido Contenido Contenido"
-        "Contenido Contenido Contenido"
-        
-        /* "Widget-1 Widget-1 Widget-2" */
-        "Footer Footer Footer";
-        width: autohtml;
+    grid-template-areas: "Header Header Header"
+    "Contenido Contenido Contenido"
+    "Contenido Contenido Contenido"
+    "Footer Footer Footer";
+    }
+
 }
 
 
 
-} 
+
+
 /**********************************HEADER + MENU NAVEGACION**********************************/
 
 header{
@@ -124,9 +118,16 @@ header{
         font-size: 150px;
         text-shadow: 3px 3px $DoradoClaro;
         letter-spacing: 5px;
+        
     
     }
+    
+}
 
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 20px;
 }
 
 
